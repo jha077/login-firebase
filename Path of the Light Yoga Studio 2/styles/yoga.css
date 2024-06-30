@@ -1,0 +1,20 @@
+body {
+
+    background-color:  #f5f5f5;
+    color:  #40407a;
+}
+
+header {
+background-color: #80CBC4;
+
+}
+
+footer {
+background-color: #80cbc4;
+
+}
+
+.center {
+    font-weight: bold;
+    text-align: center;
+}

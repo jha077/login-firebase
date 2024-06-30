@@ -1,0 +1,96 @@
+body {
+
+    background-color: #40407A;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 1600px;
+    min-width: 900px;
+    margin: 0;
+
+}
+
+header {
+background-color: #40407A;
+background-image: url('data:image/jpeg;base64,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');
+background-size: 100%;
+
+h1 {
+background-color: #80CBC4;
+background-image: url('https://bernaville.co.uk/wp-content/uploads/2019/04/water-lily-header.jpg');
+background-repeat: no-repeat;
+background-position: right;
+}
+
+footer {
+background-color: #80cbc4;
+
+}
+
+nav {
+    
+    text-align: right;
+    background-color: white;
+    margin: 0;
+    padding-bottom: 1em;
+    padding-right: 1em;
+}
+
+
+footer {
+font-style: italic;
+font-size: small;
+text-align: center;
+margin-top: auto;
+
+}
+
+li, 
+dd {
+font-size: 90%;
+
+}
+.wrapper {
+align-items: center;
+background-color: #f5f5f5;
+width: 80%;
+padding: 2em;
+}
+}
+
+.home {
+height: 40vh;
+padding-top: 6em;
+padding-left: 8em;
+font-size: 120%;
+max-height: 300px;
+
+}
+.class {
+height: 200px;
+padding-top: 6em;
+padding-left: 8em;
+padding-bottom: 2em;
+
+}
+
+.mathero {
+height: 300px;
+background-image: url('https://previews.123rf.com/images/fizkes/fizkes1904/fizkes190400331/120572268-empty-room-in-yoga-studio-with-unrolled-yoga-mat-on-wooden-floor-modern-fitness-center-with-big.jpg');
+background-color: 100% 100%;
+}
+.loungehero {
+height: 300px;
+background-image: url('https://images.squarespace-cdn.com/content/v1/5e8b91f7e6104421bcff6a16/1586212595338-W6FWSBD2TOFBVYRSIRYH/ylstudio4-18.jpg');
+background-color: 100% 100%;
+
+}
+
+h2 {
+margin: 0;
+
+}
+
+body {
+
+    color: white;
+}

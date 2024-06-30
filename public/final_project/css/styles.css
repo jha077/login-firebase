@@ -1,0 +1,196 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+
+
+/*FOOTER POSITION*/ footer {
+    background-color: green;
+    color: black;
+    text-align: center;
+   bottom: 0;
+padding: 20px;    
+position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    font-size: 20px;
+  }
+  body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+background-color: #A0937D;
+color: #43FE49;
+  }
+ .navbar {
+background-color: #43FE49 ;
+height: 80px;
+width: 100%;
+ }
+ .main-nav { 
+padding: 0;
+margin: 0;
+text-decoration: none;
+box-sizing: border-box;
+
+ }
+ label.logo {
+color: blue;
+font-size: 25px;
+line-height: 80px;
+padding: 0 100px;
+font-weight: bold;
+ }
+ nav ul {
+   
+float: right;
+margin-right: 20px;
+ }
+ nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+ }
+ nav ul li a{
+color: rgb(0, 0, 0);
+font-size: 20px;
+ }
+
+.nav-links:hover{
+    color: rgba(97, 59, 235, 0.884);
+    
+}
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+}
+@media (max-width: 858px){
+.checkbtn {
+    display: block;
+}
+.main-nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: left 0.3s ease;
+}
+.main-nav.active {
+    left: 0; /* Slide in when active */
+}
+
+.main-nav li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+nav ul li a {
+    font-size: 20px
+}
+
+#check:checked ~ .main-nav {
+left: 0
+}
+}
+
+
+.letterpg {
+font-size: 25px;
+}
+.letter {
+
+    padding: 10px 10px;
+    margin: 8px;
+    height: 50px;
+}
+input {
+    margin: 10px;
+width: 100%;
+display: inline-block;
+text-align: start;
+border: 1px solid;
+height: 50px;
+font-size: 20px;
+}
+.letter1 {
+    text-align: center;
+    font-size: 25px;
+}
+.sub {
+background-color: #43FE49;
+cursor: pointer;
+}
+
+.contactp{
+    font-size: 25px;
+
+}
+.contactp2 {
+    font-size: 20px;
+}
+.gc {
+display: block;
+margin-left: auto;
+margin-right: auto;
+align-items: center;
+width: 60%;
+height: 60vh;
+position: relative;
+border: 1px solid #43FE49;
+border-radius: 25px;
+}
+
+.azflag {
+    display: block;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+
+    
+}
+.terms1 {
+    color: purple;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.jspage {
+font-size: 25px;
+
+}
+input[type="checkbox"] {
+transform: scale(0.3);
+margin-right: 5px;
+font-size: 20px;
+position: relative;
+}
+.az {
+font-size: 25px
+}
+
+.checkbox {
+position: relative;
+display: block;
+align-items: start;
+overflow: hidden;
+vertical-align: middle;
+}

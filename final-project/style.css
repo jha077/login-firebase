@@ -1,0 +1,389 @@
+/*fonts */
+
+
+/* icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: 	#000080;
+    font-family: "Raleway", sans-serif;
+    color: #FFFF00;
+    font-size: 20px;
+}
+/*FOOTER POSITION*/ footer {
+    background-color: #d5d1c3;
+    color: black;
+    text-align: center;
+    padding: 20px;
+   bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 50;       
+  }
+    
+h1 {
+color: #FC92A7;
+font-family: "Inter", sans-serif;
+}
+h2 {
+    color: #FC92A7;
+    font-size: 15px;
+    
+
+}
+h3 {
+color: #FC92A7;
+justify-content: center;
+}
+
+.fa-chess-board {
+color: black;
+}
+
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+.navbar {
+font-size: 1rem;
+background-color:  #FC92A7;
+border: 1px solid black;
+padding-bottom: .625rem;
+}
+
+.main-nav  {
+list-style-type: none;
+display: none;
+}
+
+
+
+.nav-links, 
+.logo, fa-bars
+{
+text-decoration: none;
+color: black;
+
+}
+.logo:hover,
+.nav-links:hover{
+    color: rgba(218, 91, 0, 0.884);
+    
+}
+
+.logo {
+    display: inline-block;
+    font-size: 1.375rem;
+    font-style: italic;
+    font-weight: 800;
+    margin-top: .625rem;
+    margin-left: 1.25rem;
+
+}
+
+.logo+h5 {
+margin-left: 1.25rem;
+font-weight: 300;
+font-style: italic;
+
+}
+
+/*CREATES a nav bar toggle switch for low display sizes */.navbar-toggle {
+    position: absolute;
+    top: .625rem;
+    right: 1.25rem;
+    cursor: pointer;
+    color: black;
+}
+#chkToggle {
+
+    display: none;
+}
+
+
+#chkToggle:checked+ul.main-nav {
+display: block;
+
+}
+
+ul.main-nav {
+
+    padding-left: .5rem;
+}
+
+.main-nav li {
+
+    margin: 1rem auto;
+}
+
+
+@media screen and (min-width: 768px) {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    min-height: 70px;
+    align-items: center;
+}
+
+#chkToggle:checked+ul.main-nav{
+    display: flex;
+}
+.main-nav {
+    display: flex;
+    margin-right: 1.875rem;
+justify-content: flex-end;
+background-color: #FC92A7;
+}
+.main-nav li {
+    margin: 0;
+}
+.nav-links {
+    margin-left: 1.875rem;
+}
+.logo+h5 {
+    display: none;
+}
+.navbar-toggle {
+    display: none;
+}
+}
+
+.card-container{ 
+display: flex;
+
+justify-content: center; 
+flex-wrap: wrap;
+margin-top: 10px;
+align-items: stretch;
+position: relative;
+} 
+/*CREATES THE CARD ON PRODUCTS USED THIS TO DISPLAY MOST POPULAR GAMES*/ .card {
+    width:325px;
+    background-color: #FC92A7;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+/*conforms image to the card*/ .card img {
+width: 100%;
+height: auto;
+
+}
+/*header of the card*/ .card-content {
+font-size: 20px;
+margin-bottom: 8px;
+text-align: center;
+}
+.card content p{
+color: #666;
+font-size: 10px;
+line-height: 1.3;
+}
+/*was just used to create a p that was special for the products page*/ .products1 {
+font-size: 20px;
+font-weight: bold;
+align-items: center;
+}
+
+.about {
+width: 100%;
+padding: 15px 0px;
+font-size: 25px;
+}
+.main img {
+    width: 50%;
+    height: 50%;
+    position: relative;
+top: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+display: block;
+text-align: center;
+}
+ul {
+    display: list-item;
+    list-style-type: disc;
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*tutorial button on the cards that leads to a separate page with a quick guide to play*/ .card-content .btn {
+display: inline-block;
+padding: 8px 16px;
+background-color: white;
+text-decoration: none;
+border-radius: 4px;
+margin-top: 16px;
+color: black;
+}
+
+/*stylized videos for each tutorial*/ .main-nav2 {
+    margin: 1rem auto;
+    display: flex;
+    margin-right: 1.875rem;
+    justify-content: flex-end;
+background-color: #FC92A7;
+list-style-type: none;
+height: 50px;
+text-align: right;
+width: 100%;
+padding-right: 5px;
+}
+    
+
+.slider{
+width: 1100px;
+height: auto;
+justify-content: center;
+text-align: center;
+overflow: hidden;
+position: relative;
+left: 265px;
+color: #FFFF00;
+background-color: #000080;
+border: 5px solid black;
+margin-left: auto;
+margin-right: auto;
+}
+/*creates the slide boxes in upcoming tournments. everything from slidebg down supports this slide box*/ .slides {
+display: flex;
+overflow-x: auto;
+scroll-snap-type: mandatory;
+scroll-behavior: smooth;
+-webkit-overflow-scrolling: touch;
+width: 100%;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+}
+.sliders::-webkit-scrollbar {
+width: 10px;
+height: 10px;
+
+}
+.sliders::-webkit-scrollbar-thumb {
+background: rgb(231, 215, 215);
+border-radius: 10px;
+}
+.sliders::-webkit-scrollbar-track {
+background: transparent;
+
+}
+.slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: #FC92A7; 
+   transform: scale(1);
+   transform-origin: center;
+    transition: 0.5s;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+margin-left: auto;
+margin-right: auto;
+}
+.slidetable {
+padding-right: 50px;
+color: yellow;
+
+}
+.sliderbg{
+    background-color: white;
+
+}
+
+audio {
+background-color: #FFFF00;
+width: 10%;
+}
+/*creates a pink page on the newsletter page*/ .bgletter {
+background-color: #FC92A7;
+width: 80%;
+margin-right: auto;
+margin-left: auto;
+min-width: 1000px;
+max-width: 1280px;
+text-align: start;
+height: 800px;
+border: 2px solid rgb(0, 0, 0);
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 25px;
+position: relative;
+padding-bottom: 100px;
+}
+.letter {
+font-size: 30px;
+text-align: center;
+}
+.VGletter {
+    font-size: 25px;
+}
+.imgletter {
+
+    max-height: 300px;
+    min-height: 300px;
+}
+.products1 {
+    font-size: 25px;
+}
+/*STYLIZES THE TABLES USED TO GIVE TOURNAMENT TIMES ON THE TOURNMENT PAGE*/ .tourney th, td, table{
+font-size: 30px;
+    border: 2px solid black;
+margin-left: 100px;
+margin-right: 100px;
+padding: 20px;
+position: center;
+}
+ol {
+content: counter(step-counter);
+padding-left: 50px;
+padding: 50px;
+}
+.tournement {
+background-image: url('https://cf.geekdo-images.com/js98bhpUxbdA9Dl2SBpg3A__itemrep/img/70VChowaHV8JowYRZH_MFNR5eWI=/fit-in/246x300/filters:strip_icc()/pic794621.jpg');
+background-repeat: repeat-x;
+background-position: center;
+background-size: 25%;
+}
+.title {
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/*creates a box on the home page for the store picture*/.box {
+    position: relative;
+
+    float: right;
+width: 1200px;
+height: 800px;
+border: 2px solid yellow;
+padding: 10px; 
+margin: 10px;
+background-color: #FC92A7;
+border-radius: 25px;
+background-image: url('https://allsystemsgo.games/cdn/shop/files/all-systems-go-store-interior-01.jpg?v=1676990810&width=3840');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+top: 100px;
+
+}
+.h3home {
+font-size: 40px;
+align-items: flex-start;
+}
